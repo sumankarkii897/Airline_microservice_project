@@ -1,0 +1,30 @@
+server:
+  port: 5001
+  servlet:
+    context-path: /api/v1
+
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/authentication_db
+    username: root
+    password : Suman2058/03/29
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+
+jwt:
+  secret:
+    key: NIAKMURASK1887520788557NIAKMURASK1887520788558NIAKMURASK1887520788559NIAKMURASK18875207885510
+  expiration: 900000
+  refresh:
+    expiration: 604800000
+

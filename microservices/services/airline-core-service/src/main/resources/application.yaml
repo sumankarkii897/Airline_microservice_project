@@ -1,0 +1,22 @@
+server:
+  port : 5002
+  servlet:
+    context-path: /api/v1
+
+spring:
+
+  application:
+    name: airline-core-service
+  datasource:
+    username: root
+    password: Suman2058/03/29
+    url: jdbc:mysql://localhost:3306/airlinecore_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+
